@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+  gce.json: |
+    {
+      "type": "service_account",
+      "project_id": "$Project_Id",
+      "private_key_id": "",
+      "private_key": "",
+      "client_email": "",
+      "client_id": "",
+      "auth_uri": "",
+      "token_uri": "",
+      "auth_provider_x509_cert_url": "",
+      "client_x509_cert_url": ""
+    }
+kind: ConfigMap
+metadata:
+  name: gce-conf
+  namespace: kube-system
+  resourceVersion: ""
+  selfLink: /api/v1/namespaces/kube-system/configmaps/gce-conf
